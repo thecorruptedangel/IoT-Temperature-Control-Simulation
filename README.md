@@ -1,20 +1,20 @@
-IoT Temperature Control Simulation
-==================================
+# IoT Temperature Control Simulation
 
 This project simulates a simple IoT temperature control system with three main components:
-1. Temperature Sensor (C)  temp_sensor.c
-2. Thermostat (Python)     thermostat.py
-3. AC Control (Python)     ac.py
 
-Requirements:
--------------
+1. Temperature Sensor (C) temp_sensor.c
+2. Thermostat (Python) thermostat.py
+3. AC Control (Python) ac.py
+
+## Requirements:
+
 - Windows 10 or later
 - Visual Studio 2019 or later (for C compilation)
 - Python 3.7 or later
 - pip (Python package manager)
 
-Installation:
--------------
+## Installation:
+
 1. Ensure you have Visual Studio and Python installed on your system.
 
 2. Open a command prompt and navigate to the project directory.
@@ -32,18 +32,19 @@ Installation:
 
 The project solution file created on Visual Studio 2022 is also included for reference as 'temp_sensor.zip'
 
-   - Open the `temp_sensor.sln` file in Visual Studio.
-   - Build the solution in Release mode.
+- Open the `temp_sensor.sln` file in Visual Studio.
+- Build the solution in Release mode.
 
+## Execution:
 
-Execution:
-----------
 1. Temperature Sensor:
+
    - Open a command prompt in the Visual Studio project's Release directory.
    - Run the compiled executable:
      temp_sensor.exe
 
 2. AC Control:
+
    - Open a new command prompt in the project directory.
    - Run the AC control script:
      python ac.py
@@ -54,16 +55,16 @@ Execution:
      python thermostat.py
    - Follow the prompts to set the temperature threshold (between 20-25°C).
 
-Notes:
-------
+## Notes:
+
 - Ensure all three components are running simultaneously for proper operation.
 - The Temperature Sensor must be started before the Thermostat.
 - The AC Control script uses Flask and runs on http://localhost:5000
 - Check the console outputs of each component for status updates and temperature changes.
 - To stop the simulation, close all command prompt windows or press Ctrl+C in each.
 
-Troubleshooting:
-----------------
+## Troubleshooting:
+
 - If you encounter connection errors, ensure no other applications are using the required ports (12345 for Temperature Sensor, 5000 for AC Control).
 - Verify that your firewall is not blocking the applications.
 - If Python scripts fail to run, ensure you've installed all required packages and are using the correct Python version.
