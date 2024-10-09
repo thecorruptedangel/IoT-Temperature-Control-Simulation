@@ -17,12 +17,16 @@ This project simulates a simple IoT temperature control system with three main c
 
 1. Ensure you have Visual Studio and Python installed on your system.
 
-2. Open a command prompt and navigate to the project directory.
+2. Clone the repository:
+   git clone https://github.com/thecorruptedangel/IoT-Temperature-Control-Simulation.git
 
-3. Install required Python packages:
+3. Navigate to project directory:
+   cd IoT-Temperature-Control-Simulation
+
+4. Install required Python packages:
    pip install -r requirements.txt
 
-4. Open Visual Studio and load the temp_sensor.c file.
+5. Open Visual Studio and load the temp_sensor.c file.
    - Create a new C++ Console Application project.
    - Replace the contents of the main .cpp file with the code from temp_sensor.c.
    - Rename the file to temp_sensor.c.
